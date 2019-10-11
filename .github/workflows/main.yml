@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        marker: ["\"some marker\"", "\"another marker\"", "\"yet another marker\""]
+        marker: ["some marker", "another marker", "yet another marker"]
     steps:
       - name: Echo name
         run: |
-          echo "You are running with marker: ${{ matrix.marker }}."
+          echo "You are running with marker: \"${{ matrix.marker }}\"."
