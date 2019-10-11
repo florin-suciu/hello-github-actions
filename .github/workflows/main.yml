@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        marker: ['"some marker"', '"another marker"', '"yet another marker"']
+        marker: ["\"some marker\"", "\"another marker\"", "\"yet another marker\""]
     steps:
       - name: Echo name
         run: |
